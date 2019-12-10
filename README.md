@@ -61,3 +61,10 @@ return A
 ![](https://i.imgur.com/LvEvK2l.png)
 
 ![](https://i.imgur.com/FzVa57u.png)
+
+![Double Precision Output from Original Application](https://i.imgur.com/a8QetFP.png)
+![Single Precision Output from CUDA kernels](https://i.imgur.com/2XTl4cV.png)
+![11th Hour Attempt at Double Precision](https://i.imgur.com/wUMq2Ii.png)
+![FFTW CPU Time](https://i.imgur.com/SXlydun.png)
+![Original App CPU Time](https://i.imgur.com/Dfap5Cy.png)
+![CUDA Kernel Processor Time](https://i.imgur.com/Ik2OLEQ.png)
