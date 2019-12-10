@@ -1,6 +1,8 @@
-# CUDA implementation of 2048pt TukeyCooley Iterative FFT
+## CUDA Implementation of Tukey-Cooley Iterative FFT
 
-NB: This was an exercise in parallelizing an algorithm using CUDA. Making the Digital Music Analysis program run faster is the premise but it is an educational contrivance. In an industry setting, the optimal solution would be to use FFTW or cuFFT and focus on application and presentation layers at a higher level; this was done in a facile way with FFTW in order to compare a best-possible CPU only performance to the GPU performance.
+NB 1: This was an exercise in parallelizing an algorithm using CUDA. Making the Digital Music Analysis program run faster is the premise but it is an educational contrivance. In an industry setting, the optimal solution would be to use FFTW or cuFFT and focus on application and presentation layers at a higher level; this was done in a facile way with FFTW in order to compare a best-possible CPU only performance to the GPU performance.
+
+NB 2: It is for 2048pt FFT to single floating point precision only. This would not be useful in a production solution. As stated, this parallelization is an educational exercise, and first and foremost concerned with transforming a sequential algorithm into a parallel one.
 
 ![](https://i.imgur.com/o0mCPzX.png)
 
