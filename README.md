@@ -6,7 +6,7 @@ NB: This was an exercise in parallelizing an algorithm using CUDA. Making the Di
 BIT-REVERSE-COPY(a, A)
 n = length [a]
 for k = 0 to n-1
-	A[k] = a[reverseBits(k)]
+  A[k] = a[reverseBits(k)]
 
 ITERATIVE-FFT
 BIT-REVERSE-COPY(a, A)
@@ -14,14 +14,13 @@ n = length(a)
 for s = 1 to log2(n) do
   m = 2**s
   w_m = e**(-2*PI*i/m)
-	for k = 0 to n - 1 step m do
-		w = 1
-  	for j = 0 to m/2 - 1 do
-    	t = w*A[k + j + m/2]
-			w = w*w_m;
+  for k = 0 to n - 1 step m do
+    w = 1
+    for j = 0 to m/2 - 1 do
+      t = w*A[k + j + m/2]
+      w = w*w_m;
       u = A[k + j]
-     	A[k + j] = u + t
-      [k + j + m/2] = u - t
-
+      A[k + j] = u + t
+      A[k + j + m/2] = u - t
 return A
 ```
