@@ -6,6 +6,8 @@ Undertaken during CAB401: High Performance Computing while completing a Bachelor
 
 ### Includes
 
+#### Repo Content
+
 1. Original source for the single-threaded application
 2. Modified source code of said original application used to verify spectrogram returned from the GPU
 
@@ -17,13 +19,31 @@ Undertaken during CAB401: High Performance Computing while completing a Bachelor
 6. The .wav and related .xml file of the audio I used to verify the kernel
 7. The full .pdf report submitted at the end of the assignment
 
+#### List of Figures
+
+1. Host-Device Longitudinal Data-Flow Diagram
+2. High Level Flow Diagram of Spectrogram Generation
+3. Anchor Pattern for Parallelization of Array Indices
+4. Screenshot of a CUDA Kernel Recreating the Anchor Pattern of Array Indices
+5. Screenshot of a CUDA Kernel Performing Atomic Bit-Reversal
+6. Screenshot of Results from deviceQuery() Called on GPU Used
+7. Double Precision Spectrogram Displayed by Original Application
+8. Single Precision Spectrogram Rendered from GPU's Spectrogram Output
+9. Unsuccessful 11th Hour Attempt at a Double Precision Solution
+
+	-- the GPU used cannot perform double-precision operations natively
+
+10. CPU Time Needed for FFTW to Generate the Spectrogram
+11. CPU Time Needed for Original Application to Generate Spectrogram
+12. GPU Time Needed for CUDA Kernel to Generate Spectrogram
+
 ### Requirements/Dependencies
 
 1. An NVidia GPU of compute capability 5.0 or higher
 2. CUDA Toolkit and NVCC compiler v9.x
 3. Visual Studio 2015
 
-NB 1: This was an exercise in parallelizing an algorithm using CUDA. Making the Digital Music Analysis program run faster is the premise but it is an educational contrivance. In an industry setting, the optimal solution would be to use FFTW or cuFFT and focus on application and presentation layers at a higher level; this was done in a facile way with FFTW in order to compare a best-possible CPU only performance to the GPU performance.
+NB 1: This was an exercise in parallelizing an algorithm using CUDA. Making the Digital Music Analysis program run faster is the premise but it is an educational contrivance. **In an industry setting, the optimal solution would be to use FFTW or cuFFT** and focus on application and presentation layers at a higher level; this was done in a facile way with FFTW in order to compare a best-possible CPU only performance to the GPU performance.
 
 NB 2: **It is for 2048pt FFT to single floating point precision only**. This would not be useful in a production solution. As stated, this parallelization is an educational exercise, and first and foremost concerned with transforming a sequential algorithm into a parallel one.
 
