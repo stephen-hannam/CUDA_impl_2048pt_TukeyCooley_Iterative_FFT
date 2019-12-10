@@ -8,7 +8,9 @@ Undertaken during CAB401: High Performance Computing while completing a Bachelor
 
 1. Original source for the single-threaded application
 2. Modified source code of said original application used to verify spectrogram returned from the GPU
+
 	-- modified code is in the form of commented out lines of code
+
 3. Folder with Visual Studio project files and directories or above said application
 4. Complete CUDA source code for the single-precision kernel
 5. Incomplete CUDA source code for 11th hour attempt at a double-precision kernel
