@@ -2,7 +2,7 @@
 
 Applying methods of parallelization to speed it up a single-threaded "Digital Music Analysis" application (produces a spectrogram from a wave file) written in C#.
 
-Undertaken during CAB401: High Performance Computing while completing a Bachelor of Electrical Engineering (Honours) with a Second Major in Computer/Software at the Queensland University of Technology - a four-year degree.
+Undertaken during CAB401: High Performance Computing while completing a Bachelor of Electrical Engineering (Honours) with a Second Major in Computer/Software at the Queensland University of Technology - a four-year Washington Accords recognized degree.
 
 ### Includes
 
