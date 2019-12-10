@@ -1,6 +1,6 @@
 # CUDA Implementation of Tukey-Cooley Iterative FFT
 
-Taking a Digital Music Analysis single-threaded application (produces a spectrogram from a wave file) written in C#, and applying methods of parallelization to speed it up.
+Applying methods of parallelization to speed it up a single-threaded "Digital Music Analysis" application (produces a spectrogram from a wave file) written in C#.
 
 Undertaken during CAB401: High Performance Computing while completing a Bachelor of Electrical Engineering (Honours) with a Second Major in Computer/Software at the Queensland University of Technology - a four-year degree.
 
@@ -11,7 +11,7 @@ Undertaken during CAB401: High Performance Computing while completing a Bachelor
 
 	-- modified code is in the form of commented out lines of code
 
-3. Folder with Visual Studio project files and directories or above said application
+3. Folder with Visual Studio project files and directories of above said application
 4. Complete CUDA source code for the single-precision kernel
 5. Incomplete CUDA source code for 11th hour attempt at a double-precision kernel
 6. The .wav and related .xml file of the audio I used to verify the kernel
