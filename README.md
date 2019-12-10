@@ -2,6 +2,10 @@
 
 NB: This was an exercise in parallelizing an algorithm using CUDA. Making the Digital Music Analysis program run faster is the premise but it is an educational contrivance. In an industry setting, the optimal solution would be to use FFTW or cuFFT and focus on application and presentation layers at a higher level; this was done in a facile way with FFTW in order to compare a best-possible CPU only performance to the GPU performance.
 
+![](https://i.imgur.com/rnh7Pbh.png)
+
+![](https://i.imgur.com/rnh7Pbh.png)
+
 ```
 BIT-REVERSE-COPY(a, A)
 n = length [a]
@@ -24,3 +28,11 @@ for s = 1 to log2(n) do
       A[k + j + m/2] = u - t
 return A
 ```
+
+![](https://i.imgur.com/rnh7Pbh.png)
+
+![](https://i.imgur.com/rnh7Pbh.png)
+
+![](https://i.imgur.com/rnh7Pbh.png)
+
+![](https://i.imgur.com/rnh7Pbh.png)
